@@ -1,14 +1,15 @@
 //jshint esversion:6
 
 posts = []
+let espacio = '...'
 
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 var _ = require('lodash');
 
-const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
-const aboutContent = "Hi, I'm dayan and I'm the developer of this website 💫. I love creating new things and not only in programming, that's why I bring my creativity to music playing the violin or art with landscape painting 🎨. I also love helping people get motivated to code and that's why I created my channel to share my experience and motivate us 💻!I hope you get to know me a little more now. 🌈";
+const homeStartingContent = "Hello and welcome to this space where you can let your imagination run wild, tell about your day and experiences or let off steam 📑.This place is yours, and I would like to tell you why you should write daily. 🌈\"It helps us recognize our emotions. It improves our ability to understand what we feel, which is known as emotional intelligence. We relieve worries or obsessive thoughts by relieving anxiety and stress symptoms. We learn to see problems from other perspectives\"✨ Try it!.";
+const aboutContent = "Hi, I'm Dayan and I'm the developer of this website 💫. I love creating new things and not only in programming, that's why I bring my creativity to music playing the violin or art with landscape painting 🎨. I also love helping people get motivated to code and that's why I created my channel to share my experience and motivate us 💻!I hope you get to know me a little more now. 🌈";
 const contactContent = "Well, if you are interested in contacting or knowing a little more about my work 💜, I leave you my social networks. I really hope to see you there! 👀";
 
 const app = express();
@@ -19,7 +20,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get('/',(req,res)=>{
-  res.render('home',{tetx1:homeStartingContent, posts: posts })
+  res.render('home',{tetx1:homeStartingContent, posts: posts ,espacio:espacio})
 })
 
 app.get('/about',(req,res)=>{

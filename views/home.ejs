@@ -1,9 +1,9 @@
 <%- include('./partials/header') -%>
-<h1>Home</h1>
+<h1>Home 💫</h1> 
 <p><%= tetx1 %></p>
 <% for(post of posts){ %>
     <h2><%= post.title %></h2>
-    <p><%= post.body.substr(1,100) + '...' %><a href="/posts/{{<%= post.title %>}">Read More</a></p>
+    <p><%= post.body.substr(0,100)  %> <% if(post.body.length >= 100) {%> <%= espacio %> <%} %>  <a style="margin-left: 50px;" href="/posts/{{<%= post.title %>}">Read More</a></p>
    
 <% } %>
 <%- include('./partials/footer') -%>
