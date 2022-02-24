@@ -44,3 +44,27 @@ h1
     color: #fff;
 }
 
+.redes
+{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 30px auto;
+}
+.redes > li 
+{
+    list-style: none;
+}
+.girl
+{
+    width: 100px;
+}
+
+.container-img {
+    text-align: center;
+}
+.container-img > img{
+    margin: 0 50px;
+}
