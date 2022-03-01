@@ -8,6 +8,12 @@ Try it, I'm sure this page will help you feel better.
 - Post your experience
 - ✨ Your friend ✨
 
+
+![image](https://github.com/dayanMichelle/dailyJournal/blob/main/demo.gif)
+
+
+
+
 ## Features
 
 - Minimalist.
