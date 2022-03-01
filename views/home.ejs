@@ -3,7 +3,7 @@
 <p><%= tetx1 %></p>
 <% for(post of posts){ %>
     <h2><%= post.title %></h2>
-    <p><%= post.post.substr(0,100)  %> <% if(post.post.length >= 100) {%> <%= espacio %> <%} %>  <a style="margin-left: 50px;" href="/posts/{{<%= post._id %>}">Read More</a></p>
+    <p><%= post.post.substr(0,100)  %> <% if(post.post.length >= 100) {%> <%= espacio %> <%} %>  <a style="margin-left: 50px;"  href="/posts/<%=post._id%>">Read More</a></p>
    
 <% } %>
 <%- include('./partials/footer') -%>

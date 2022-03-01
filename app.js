@@ -64,7 +64,16 @@ app.post('/compose', (req, res) => {
 })
 
 app.get('/posts/:postId', (req, res) => {
- 
+  const requestedPostId = req.params.postId;
+  
+  Post.findOne({_id: requestedPostId}, function(err, post){
+    if(err){
+      res.render("post", {title: '',post:''});
+    }else{
+        res.render("post", {title: post.title,post:post.post});
+    }
+   
+  })
 })
 
 
