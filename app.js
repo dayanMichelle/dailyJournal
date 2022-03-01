@@ -71,8 +71,11 @@ app.get('/posts/:postId', (req, res) => {
       res.render("post", {title: '',post:''});
     }else{
         res.render("post", {title: post.title,post:post.post});
+      
+       
     }
    
+ 
   })
 })
 

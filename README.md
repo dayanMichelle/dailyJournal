@@ -6,12 +6,10 @@ Try it, I'm sure this page will help you feel better.
 
 - Post your ideas
 - Post your experience
-- ✨ Your friend ✨
+- ✨Is Your friend ✨
 
 
 ![image](https://github.com/dayanMichelle/dailyJournal/blob/main/demo.gif)
-
-
 
 
 ## Features
@@ -35,6 +33,7 @@ Try it, I'm sure this page will help you feel better.
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 - Git - free and open source distributed version control system
 - JS - duh
+- MongoBD - NoSQL (mongoose)
 
 And of course Daily Journal itself is open source with a public repository: https://github.com/dayanMichelle/dailyJournal
  on GitHub.
